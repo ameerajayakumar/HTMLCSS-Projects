@@ -1,0 +1,25 @@
+div{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    display: inline-block;
+}
+
+.one{
+    background: rgb(241, 115, 136);
+    transform: translateX(120px); /*right*/
+}
+
+.two{
+    background: rgb(189, 64, 85);
+    transform: translateY(-120px); /*top*/
+}
+
+.three{
+    background: rgb(121, 28, 44);
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%); // placed in the middle
+    /* transform:translate(-120px, 600px); /*x, y*/
+} 
