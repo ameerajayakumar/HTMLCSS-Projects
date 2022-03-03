@@ -4,6 +4,10 @@ div{
     margin: 20px;
     display: inline-block;
 }
+div:hover{
+    background: paleturquoise;
+    transform: scale(2);
+}
 
 .one{
     background: rgb(241, 115, 136);
@@ -13,6 +17,7 @@ div{
 .two{
     background: rgb(189, 64, 85);
     transform: translateY(-120px); /*top*/
+    transition: all 3s 2s;
 }
 
 .three{
@@ -20,6 +25,13 @@ div{
     position: absolute;
     top:50%;
     left:50%;
-    transform: translate(-50%,-50%); // placed in the middle
+    transform: translate(-50%,-50%); /* placed in the middle*/
+    transition-property: background, border-radius;
+    transition-duration: 4s, 7s; /* transition-duration: 4s if both same duration*/
+    transition-delay: 2s;
     /* transform:translate(-120px, 600px); /*x, y*/
 } 
+
+.three:hover{
+    border-radius: 50%;
+}
