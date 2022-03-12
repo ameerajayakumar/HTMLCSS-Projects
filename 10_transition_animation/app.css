@@ -1,0 +1,11 @@
+div{
+    width: 200px;
+    height: 100px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.transition{
+    background: blue;
+}
