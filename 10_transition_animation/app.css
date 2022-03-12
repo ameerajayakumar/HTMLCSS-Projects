@@ -4,8 +4,43 @@ div{
     color: white;
     text-transform: uppercase;
     text-align: center;
+    font-weight: 900;
 }
 
 .transition{
     background: blue;
+    margin-bottom: 20px;
+    transition: all 3s linear;
+}
+
+.animation{
+    background: green;
+    animation-name: move;
+    animation-duration: 12s;
+    animation-iteration-count: 3;
+    /*animation: move 3s infinite;*/
+}
+
+.transition:hover{
+    background: red;
+    transform: translateX(200px);
+}
+
+@keyframes move {
+    0%{
+    transform: translateX(30px);
+    }
+    50%{
+    transform: translateX(130px);
+    background: brown;
+
+    }
+    75%{
+    transform: translateX(-100px);
+    background: pink;
+    }
+    100%{
+    transform: translateX(50px);
+     background: orange;
+    }
 }
